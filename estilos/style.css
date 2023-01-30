@@ -36,6 +36,9 @@ section#login {
     transform: translate(-50%, -50%);
     overflow: hidden;/* o que estiver fora da borda fica escindido*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
+
+    transition: width .6s, height .6s;/*animação na transição*/
+  transition-timing-function: ease;
     
 }
 

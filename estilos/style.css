@@ -33,12 +33,12 @@ section#login {
     position: absolute;
     top: 50%;
     left:50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;/* o que estiver fora da borda fica escindido*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
-
-    transition: width .4s, height .4s;/*animação na transição*/
-  transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;/*animação na transição*/
+    transition-timing-function: ease; /* todas as transformações e melhor se escritas no final*/
     
 }
 
@@ -68,8 +68,32 @@ div.campo > label {
     display: none;/* retirou os label login e senha*/
 }
 
+div.campo > span {
+    color: aliceblue;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+   
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-7px);
+}
+
+div.campo > input:focus-within {
+    background-color: aliceblue; /* muda a cor do campo em foco*/
+}
+
 form > div.campo {
     background-color:#5f2c82 ;
+    border: 2px solid #5f2c82 ;
     display: block;
     width: 100%;
     height: 40px;
